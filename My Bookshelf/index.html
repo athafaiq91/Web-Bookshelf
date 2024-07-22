@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Bookshelf</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>Bookshelf</h1>
+    </header>
+    <main>
+        <section class="input-section">
+            <h2>Masukkan Buku Baru</h2>
+            <form id="inputBook">
+                <div class="input">
+                    <label for="inputBookTitle">Judul Buku</label>
+                    <input id="inputBookTitle" type="text" placeholder="Masukkan Judul Buku" required>
+                </div>
+                <div class="input">
+                    <label for="inputBookAuthor">Penulis</label>
+                    <input id="inputBookAuthor" type="text" placeholder="Masukkan Nama Penulis" required>
+                </div>
+                <div class="input">
+                    <label for="inputBookYear">Tahun Terbit</label>
+                    <input id="inputBookYear" type="number" placeholder="Masukkan Tahun Terbit Buku" required>
+                </div>
+                <div class="input-inline">
+                    <label for="inputBookIsComplete">Selesai dibaca</label>
+                    <input id="inputBookIsComplete" type="checkbox">
+                </div>
+                <button id="bookSubmit" type="submit">Masukkan Buku ke rak <span>Belum selesai dibaca</span></button>
+            </form>
+        </section>
+        <section class="search-content">
+            <h2>Cari Buku (optional)</h2>
+            <form id="searchBook">
+                <input id="searchBookTitle" type="text" placeholder="Masukkan Judul">
+                <button id="searchSubmit" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </section>
+        </section>
+        <section class="book-shelf">
+            <h2 style="color: #d80032;">Belum selesai dibaca</h2>
+            <div id="incompleteBookshelfList" class="book-list">
+            </div>
+        </section>
+        <section class="book-shelf">
+            <h2 style="color: #008000;">Selesai dibaca</h2>
+            <div id="completeBookshelfList" class="book-list">
+            </div>
+        </section>
+    </main>
+    <script src="script.js" type="text/JavaScript"></script>
+</body>
+</html>

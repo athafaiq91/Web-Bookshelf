@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to left, #97fff9 , #fffd8c);
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 8px;
+    background: linear-gradient(to right, #a6f3ef , #fffd8c);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    color: #7a40de;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-weight: 900;
+}
+
+.input-section {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid #7a40de;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+}
+
+.input-section h2 {
+    font-weight: 700;
+    text-align: center;
+    color: #7a40de;
+}
+
+.input-section form button {
+    background-color: #7a40de;
+    color: whitesmoke;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.input-section form button:hover {
+    background-color: #45a049;
+}
+
+.input-section form button span {
+    color: #fffb00;
+}
+
+.input {
+    margin: 8px 0;
+}
+
+.input input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.input label {
+    color: #7a40de;
+    font-weight: 400;
+}
+
+.input-inline {
+    margin: 12px 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-inline label {
+    color: #7a40de;
+    font-weight: 400;
+}
+
+.input-inline input[type="checkbox"] {
+    margin-bottom: 0;
+}
+
+.search-content {
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: 16px;
+    border: 1px solid #7a40de;
+    border-radius: 5px;
+}
+
+.search-content h2 {
+    color: #7a40de;
+    font-weight: 700;
+}
+
+#searchBook {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#searchBook input[type="text"] {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+#searchBook input:focus {
+    border: 1px solid #7a40de;
+    outline: none;
+}
+
+#searchBook button {
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #7a40de;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#searchBook button:hover {
+    background-color: #45a049;
+}
+
+.book-shelf {
+    background: rgba(255, 255, 255, 0.8);
+    margin-top: 16px;
+    padding: 16px;
+    border: 1px solid #7a40de;
+    border-radius: 5px;
+}
+
+.book-shelf h2 {
+    color: #7a40de;
+    font-weight: 700;
+    text-align: center;
+}
+
+.book-list {
+    padding: 16px;
+}
+
+.book-item {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.book-item:hover {
+    transform: scale(1.01);
+}
+
+.book-item h3 {
+    color: #333;
+}
+
+.action {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.action button {
+    padding: 5px 10px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.check-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+.dialog {
+    color: #7a40de;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.dialog p {
+    margin-bottom: 20px;
+}
+
+.dialog button {
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
